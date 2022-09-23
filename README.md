@@ -42,3 +42,23 @@ when it is placed inside a folder, say `include` in the project directory.
 | Auxiliary Space | : O(1)  |
 
 
+## 2. BinarySearch
+  ````
+	Function   : BinarySearch
+	Parameters : (3) - array, length of array, element to be searched
+	Retrun type: Position of element to be searched in the given array
+	Note       : If the given elemet to be searched is not found, method
+	             will return -1. Array and elemnt to be searched should
+	             be of integers.
+  ````
+  
+  To use this method:
+  ````C++
+  int position = AlgoLib::SearchingAlgos::BinarySearch(array, length, elementToBeSearched);
+  ````
+  
+| Time complexity | : O(logn)|
+|-----------------|:---------|
+| Auxiliary Space | : O(1)   |
+
+
