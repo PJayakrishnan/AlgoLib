@@ -14,6 +14,7 @@ namespace AlgoLib
 		~SearchingAlgos();
 
 		static int LinearSearch(int* arr, int length, int k);
+		static int BinarySearch(int arr[], int n, int k);
 
 	private:
 
