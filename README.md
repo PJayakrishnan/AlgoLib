@@ -36,3 +36,9 @@ when it is placed inside a folder, say `include` in the project directory.
   ````C++
   int position = AlgoLib::SearchingAlgos::LinearSearch(array, length, elementToBeSearched);
   ````
+  
+| Time complexity | : O(n)  |
+|-----------------|:--------|
+| Auxiliary Space | : O(1)  |
+
+
