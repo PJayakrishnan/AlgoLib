@@ -1,7 +1,7 @@
 # AlgoLib
 A static C++ library contatining basic algorithms.
 
-Classes:
+Content:
 * [How to compile the library](#how-to-compile-the-library)
 * [How to add AlgoLib library in a project using Visual Studio]()
 * [SearchingAlgos](#searchingalgos)
