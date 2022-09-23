@@ -31,3 +31,8 @@ when it is placed inside a folder, say `include` in the project directory.
 	             will return -1. Array and elemnt to be searched should
 	             be of integers.
   ````
+  
+  To use this method:
+  ````C++
+  int position = AlgoLib::SearchingAlgos::LinearSearch(array, length, elementToBeSearched);
+  ````
