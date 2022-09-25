@@ -22,7 +22,12 @@ when it is placed inside a folder, say `include` in the project directory.
 # SearchingAlgos
 
 # Functions
-## 1. LinearSearch
+<details>
+
+<summary><h3> 1. LinearSearch </h3></summary>
+
+<br>
+
   ````
 	Function   : LinearSearch
 	Parameters : (3) - array, length of array, element to be searched
@@ -40,16 +45,19 @@ when it is placed inside a folder, say `include` in the project directory.
 | Time complexity | : O(n)  |
 |-----------------|:--------|
 | Auxiliary Space | : O(1)  |
+</details>
 
+<details>
+<summary><h3> 2. BinarySearch </h3></summary>
+<br>
 
-## 2. BinarySearch
   ````
 	Function   : BinarySearch
 	Parameters : (3) - array, length of array, element to be searched
 	Retrun type: Position of element to be searched in the given array
 	Note       : If the given elemet to be searched is not found, method
 	             will return -1. Array and elemnt to be searched should
-	             be of integers.
+	             be of integers and array should be sorted.
   ````
   
   To use this method:
@@ -60,5 +68,4 @@ when it is placed inside a folder, say `include` in the project directory.
 | Time complexity | : O(logn)|
 |-----------------|:---------|
 | Auxiliary Space | : O(1)   |
-
-
+</details>
