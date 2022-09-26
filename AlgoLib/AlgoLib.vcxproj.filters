@@ -18,9 +18,15 @@
     <ClInclude Include="include\SearchingAlgos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\SortingAlgos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SearchingAlgos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SortingAlgos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
