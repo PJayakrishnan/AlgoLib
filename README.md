@@ -5,6 +5,7 @@ Content:
 * [How to compile the library](#how-to-compile-the-library)
 * [How to add AlgoLib library in a project using Visual Studio]()
 * [SearchingAlgos](#searchingalgos)
+* [SortingAlgos](#sortingalgos)
 
 # How to compile the library
 You can clone this github repo to your local system using Visual Studio and open the `.sln` file there. Thus you will be able to compile and build `.lib` file.
@@ -21,7 +22,7 @@ when it is placed inside a folder, say `include` in the project directory.
 
 # SearchingAlgos
 
-# Functions
+## Functions
 <details>
 
 <summary><h3> 1. LinearSearch </h3></summary>
@@ -68,4 +69,30 @@ when it is placed inside a folder, say `include` in the project directory.
 | Time complexity | : O(logn)|
 |-----------------|:---------|
 | Auxiliary Space | : O(1)   |
+</details>
+
+# SortingAlgos
+
+## Functions
+
+<details>
+<summary><h3> 1. SelectionSort </h3></summary>
+<br>
+
+  ````
+	Function   : SelectionSort
+	Parameters : (2) - array, length of array.
+	Retrun type: void
+	Note       : Array should be of integers.
+	
+  ````
+  
+  To use this method:
+  ````C++
+  int position = AlgoLib::SortingAlgos::SelectionSort(array, length);
+  ````
+  
+| Time complexity | : O( $n^2$ )|
+|-----------------|:------------|
+| Auxiliary Space | : O(1)      |
 </details>
