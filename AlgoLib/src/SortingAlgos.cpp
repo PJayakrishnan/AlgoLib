@@ -1,7 +1,7 @@
 //***********************************************************
 // Implementation file for SortingAlgos class
 // Author	   : Jayakrishnan. P
-// Last updated: 26/09/2022
+// Last updated: 14/10/2022
 //***********************************************************
 #include "../include/SortingAlgos.h"
 
@@ -17,11 +17,28 @@ namespace AlgoLib
 
 	//*********************************************************************
 	// Function   : SelectionSort
-	// Parameters : (2) - array, length of array.
+	// Parameters : (3) - array, length of array, duration to sort as reference.
 	// Retrun type: void
 	// Note       : Array should be of integers.
 	//*********************************************************************
-	void SortingAlgos::SelectionSort(int* array, int length)
+	void SortingAlgos::SelectionSort(int* array, int length, double& duration)
+	{
+		
+		auto start = std::chrono::high_resolution_clock::now();
+		SelectionSort_inside(array, length);
+		auto end = std::chrono::high_resolution_clock::now();
+
+		duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+
+	}
+
+	//*********************************************************************
+	// Function   : SelectionSort_inside
+	// Parameters : (2) - array, length of array
+	// Retrun type: void
+	// Note       : Array should be of integers.
+	//*********************************************************************
+	void SortingAlgos::SelectionSort_inside(int* array, int length)
 	{
 		int lowest;
 		int temp = 0;

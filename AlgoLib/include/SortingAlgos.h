@@ -1,9 +1,10 @@
 //***********************************************************
 // Header file for SortingAlgos class
 // Author	   : Jayakrishnan. P
-// Last updated: 26/09/2022
+// Last updated: 14/10/2022
 //***********************************************************
 #pragma once
+#include <chrono>
 
 namespace AlgoLib 
 {
@@ -12,12 +13,12 @@ namespace AlgoLib
 	public:
 		
 
-		static void SelectionSort(int* arr, int length);
+		static void SelectionSort(int* arr, int length, double& duration);
 
 	private:
 		SortingAlgos();
 		~SortingAlgos();
-		//void SwapInArray(int* arr);
+		static void SelectionSort_inside(int* arr, int length);
 	};
 }
 
