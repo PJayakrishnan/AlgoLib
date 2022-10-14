@@ -8,7 +8,7 @@ Content:
 * [SortingAlgos](#sortingalgos)
 
 # How to compile the library
-You can clone this github repo to your local system using Visual Studio and open the `.sln` file there. Thus you will be able to compile and build `.lib` file.
+You can clone this github repo to your local system using Visual Studio and open the `.sln` file there. Thus you will be able to compile and build AlgoLib project to `.lib` file.
 
 # How to add AlgoLib library in your project using Visual Studio
 
@@ -31,7 +31,8 @@ when it is placed inside a folder, say `include` in the project directory.
 
   ````
 	Function   : LinearSearch
-	Parameters : (3) - array, length of array, element to be searched
+	Parameters : (4) - array, length of array, element to be searched,
+			reference to duration to complete algorithm
 	Retrun type: Position of element to be searched in the given array
 	Note       : If the given elemet to be searched is not found, method
 	             will return -1. Array and elemnt to be searched should
@@ -40,8 +41,9 @@ when it is placed inside a folder, say `include` in the project directory.
   
   To use this method:
   ````C++
-  int position = AlgoLib::SearchingAlgos::LinearSearch(array, length, elementToBeSearched);
+  int position = AlgoLib::SearchingAlgos::LinearSearch(array, length, elementToBeSearched, duration);
   ````
+  Note: `duration` is passed as reference and can be used further down the code when it have the time taken to complete the algorithm, in milli seconds.
   
 | Time complexity | : O(n)  |
 |-----------------|:--------|
@@ -54,7 +56,8 @@ when it is placed inside a folder, say `include` in the project directory.
 
   ````
 	Function   : BinarySearch
-	Parameters : (3) - array, length of array, element to be searched
+	Parameters : (4) - array, length of array, element to be searched, 
+			reference to duration to complete algorithm.
 	Retrun type: Position of element to be searched in the given array
 	Note       : If the given elemet to be searched is not found, method
 	             will return -1. Array and elemnt to be searched should
@@ -63,8 +66,9 @@ when it is placed inside a folder, say `include` in the project directory.
   
   To use this method:
   ````C++
-  int position = AlgoLib::SearchingAlgos::BinarySearch(array, length, elementToBeSearched);
+  int position = AlgoLib::SearchingAlgos::BinarySearch(array, length, elementToBeSearched, duration);
   ````
+  Note: `duration` is passed as reference and can be used further down the code when it have the time taken to complete the algorithm, in milli seconds.
   
 | Time complexity | : O(logn)|
 |-----------------|:---------|
@@ -81,7 +85,9 @@ when it is placed inside a folder, say `include` in the project directory.
 
   ````
 	Function   : SelectionSort
-	Parameters : (2) - array, length of array.
+	Parameters : (3) - array, length of array,
+			reference to duration for 
+			sorting.
 	Retrun type: void
 	Note       : Array should be of integers.
 	
@@ -89,7 +95,7 @@ when it is placed inside a folder, say `include` in the project directory.
   
   To use this method:
   ````C++
-  int position = AlgoLib::SortingAlgos::SelectionSort(array, length);
+  int position = AlgoLib::SortingAlgos::SelectionSort(array, length, duration);
   ````
   
 | Time complexity | : O( $n^2$ )|
